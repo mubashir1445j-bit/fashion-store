@@ -3,34 +3,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Elite Fashion Hub</title>
+    <title>Elite Fashion Hub - Premium Store</title>
     <style>
-        body { font-family: sans-serif; text-align: center; background: #f4f4f4; padding: 20px; }
-        .product { background: white; padding: 20px; margin: 15px auto; border-radius: 10px; width: 80%; max-width: 300px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
-        .btn { display: inline-block; background: #ff9900; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px; margin-top: 10px; }
+        body { font-family: 'Arial', sans-serif; background-color: #f4f4f4; margin: 0; padding: 0; text-align: center; }
+        header { background: #232f3e; color: white; padding: 20px; }
+        
+        /* Modern Grid Layout */
+        .product-grid { 
+            display: grid; 
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); 
+            gap: 20px; 
+            padding: 20px; 
+            max-width: 1200px; 
+            margin: auto; 
+        }
+        
+        .product { 
+            background: white; 
+            padding: 20px; 
+            border-radius: 12px; 
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+        .product:hover { transform: scale(1.02); }
+        
+        .product img { width: 100%; height: 250px; object-fit: cover; border-radius: 8px; }
+        .product h3 { margin: 15px 0 10px; font-size: 18px; color: #333; }
+        .price { font-size: 20px; color: #b12704; font-weight: bold; margin-bottom: 15px; }
+        
+        .btn { 
+            display: block; 
+            background: #ff9900; 
+            color: #111; 
+            padding: 12px; 
+            text-decoration: none; 
+            border-radius: 5px; 
+            font-weight: bold; 
+        }
     </style>
 </head>
 <body>
-    <h1>Elite Fashion Hub</h1>
-    <p>Trending products for you!</p>
 
-    <div id="dress1" class="product">
-        <h3>Stylish Summer Dress</h3>
-        <a href="https://amazon.com" class="btn">Shop Now</a>
+    <header>
+        <h1>Elite Fashion Hub</h1>
+        <p>Trending Co-ord Sets & Premium Fashion</p>
+    </header>
+
+    <div class="product-grid">
+        <div class="product">
+            <img src="https://via.placeholder.com/300" alt="Product">
+            <h3>Luxury Silk Co-ord Set</h3>
+            <p class="price">$49.99</p>
+            <a href="#" class="btn">Buy Now</a>
+        </div>
+        
+        <div class="product">
+            <img src="https://via.placeholder.com/300" alt="Product">
+            <h3>Summer Floral Set</h3>
+            <p class="price">$39.99</p>
+            <a href="#" class="btn">Buy Now</a>
+        </div>
     </div>
 
-    <div id="dress2" class="product">
-        <h3>Casual Classic Shoes</h3>
-        <a href="https://amazon.com" class="btn">Shop Now</a>
-    </div>
-
-    <div id="new-item" class="product">
-        <h3>Trending Co-ord Set</h3>
-        <a href="https://amazon.com/your-affiliate-link">Buy Now</a>
-    </div>
-
-<div class="product"><img src="https://m.media-amazon.com/images/I/product.jpg"><br><h3>Luxury Summer Co-ord Set</h3><a href="https://www.amazon.com/dp/product-id?tag=your-tag" class="btn">Shop Now</a></div>
-
-<div class="product"><img src="https://m.media-amazon.com/images/I/product.jpg"><br><h3>Luxury Summer Co-ord Set</h3><a href="https://www.amazon.com/dp/product-id?tag=your-tag" class="btn">Shop Now</a></div>
 </body>
 </html>
