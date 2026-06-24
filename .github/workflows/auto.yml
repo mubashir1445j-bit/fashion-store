@@ -16,6 +16,6 @@ jobs:
         run: pip install requests beautifulsoup4 PyGithub
       - name: Run Agent
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          MY_TOKEN: ${{ secrets.MY_TOKEN }}
         run: python master_agent.py
         
